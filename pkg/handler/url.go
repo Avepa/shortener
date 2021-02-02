@@ -41,6 +41,6 @@ func (h *Handler) Get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	http.Redirect(w, r, url, http.StatusSeeOther)
+	http.Redirect(w, r, url, http.StatusFound)
 	return
 }
